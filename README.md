@@ -35,5 +35,4 @@ The custom CNN was trained for 20 epochs with the following results:
 
 1. **Clone the repository**
    ```bash
-   git clone [https://github.com/YOUR-USERNAME/satellite-classifier.git](https://github.com/YOUR-USERNAME/satellite-classifier.git)
-   cd satellite-classifier
+   git clone https://github.com/raneyash21/satellite-classifier.git
