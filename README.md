@@ -33,7 +33,7 @@ The custom CNN was trained for 20 epochs with the following results:
 
 
 ## 📸 Screenshots
-![App Demo](PASTE_YOUR_IMAGE_LINK_HERE)
+![App Demo](screenshot.png)
 
 ---
 **Author:** Yash Rane
