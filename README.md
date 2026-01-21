@@ -31,6 +31,14 @@ The custom CNN was trained for 20 epochs with the following results:
 * **Validation Accuracy:** ~88-89%
 * **Loss:** minimized without significant overfitting (verified via loss curves).
 
+
+## 📸 Screenshots
+![App Demo](PASTE_YOUR_IMAGE_LINK_HERE)
+
+---
+**Author:** Yash Rane
+*Aerospace Engineering Student | VIT Bhopal*
+
 ## 🚀 How to Run Locally
 
 1. **Clone the repository**
