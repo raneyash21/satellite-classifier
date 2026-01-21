@@ -3,7 +3,7 @@ import tensorflow as tf
 import numpy as np
 from PIL import Image
 
-# --- 1. GLOBAL VARIABLES (Must be at the top) ---
+# --- 1. GLOBAL VARIABLES  ---
 class_names = ['AnnualCrop', 'Forest', 'HerbaceousVegetation', 'Highway', 
                'Industrial', 'Pasture', 'PermanentCrop', 'Residential', 
                'River', 'SeaLake']
@@ -18,7 +18,6 @@ st.set_page_config(
 # --- 3. LOAD MODEL FUNCTION ---
 @st.cache_resource
 def load_model():
-    # Load the V2 model you uploaded to GitHub
     return tf.keras.models.load_model('my_satellite_model_v2.keras')
 
 model = load_model()
@@ -36,16 +35,14 @@ with st.sidebar:
 st.title("🛰️ Satellite Terrain Analysis")
 
 if file is not None:
-    # Create two columns for a professional look
     col1, col2 = st.columns(2)
     
-    # Open and display the image
     img = Image.open(file)
     
     with col1:
         st.image(img, caption='Source Image', use_column_width=True)
         
-    # Preprocess the image for the AI (Resize to 64x64)
+    # Preprocess the image for the AI 
     img_resized = img.resize((64, 64))
     img_array = np.array(img_resized) / 255.0
     img_array = np.expand_dims(img_array, axis=0)
@@ -76,3 +73,4 @@ if file is not None:
 else:
     # Placeholder text when no image is uploaded
     st.write("👈 Upload an image in the sidebar to begin analysis.")
+
