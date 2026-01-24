@@ -40,7 +40,7 @@ class_names = [
 
 # --- SIDEBAR ---
 with st.sidebar:
-    st.image("https://cdn-icons-png.flaticon.com/512/1995/1995655.png", width=80)
+    st.image("https://cdn-icons-png.flaticon.com/512/2103/2103633.png", width=90)
     st.title("Mission Control")
     st.info("This tool uses a Deep Learning model (CNN) to classify terrain from satellite imagery.")
     
@@ -99,5 +99,6 @@ else:
         with col2:
             st.metric("Confidence Level", f"{confidence:.2f}%")
             st.progress(int(confidence))
+
 
 
