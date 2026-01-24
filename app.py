@@ -24,7 +24,7 @@ st.markdown(hide_st_style, unsafe_allow_html=True)
 @st.cache_resource
 def load_model():
     # Make sure 'satellite_model.h5' is the exact name of your saved file
-    model = tf.keras.models.load_model('my_satellite_model_v2.h5')
+    model = tf.keras.models.load_model('my_satellite_model_v2.keras')
     return model
 
 with st.spinner('Loading AI Model...'):
@@ -99,4 +99,5 @@ else:
         with col2:
             st.metric("Confidence Level", f"{confidence:.2f}%")
             st.progress(int(confidence))
+
 
